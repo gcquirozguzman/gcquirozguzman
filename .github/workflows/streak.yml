@@ -1,0 +1,37 @@
+name: Actualizar Streak SVG
+
+# Regenera img/streak.svg una vez por semana (y permite ejecutarlo a mano)
+on:
+  schedule:
+    - cron: "0 5 * * 1"   # Lunes 05:00 UTC = Lunes 00:00 Perú (UTC-5)
+  workflow_dispatch:        # botón "Run workflow" para ejecutarlo cuando quieras
+
+permissions:
+  contents: write           # necesario para hacer commit del SVG actualizado
+
+jobs:
+  streak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generar streak SVG
+        run: |
+          mkdir -p img
+          curl -sSL \
+            --retry 5 --retry-delay 10 --max-time 90 \
+            "https://streak-stats.demolab.com/?user=gcquirozguzman&hide_border=true&theme=github-dark&ring=1f6feb&fire=1f6feb&currStreakLabel=1f6feb" \
+            -o img/streak.svg
+
+      - name: Verificar que sea un SVG válido
+        run: |
+          head -c 5 img/streak.svg | grep -q "<svg" || { echo "Respuesta inválida, no se actualiza"; exit 1; }
+
+      - name: Commit y push si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add img/streak.svg
+          git diff --staged --quiet || git commit -m "chore: actualizar streak SVG"
+          git push
