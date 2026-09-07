@@ -52,7 +52,7 @@
       <th>Proyecto</th>
       <th>Descripción</th>
       <th>Lenguaje</th>
-      <th>⭐</th>
+      <th>Ámbito</th>
     </tr>
   </thead>
   <tbody>
@@ -60,37 +60,31 @@
       <td><a href="https://github.com/gcquirozguzman/amawta-tinkuy">🏛️ amawta-tinkuy</a></td>
       <td>Concilio de 8 consejeros IA que deliberan y sintetizan, sin instalar nada</td>
       <td>📝 Prompt</td>
-      <td align="center">0</td>
+      <td align="center">🧪 Personal</td>
     </tr>
     <tr>
       <td><a href="https://github.com/gcquirozguzman/deepfake-visual-detector">🧠 deepfake-visual-detector</a></td>
       <td>Detector de deepfakes por análisis visual</td>
       <td>🔵 Python</td>
-      <td align="center">0</td>
+      <td align="center">🧪 Personal</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/gcquirozguzman/dota-yanapay">🎮 dota-yanapay</a></td>
-      <td>Asesor táctico en tiempo real para Dota 2 con GSI + LLM</td>
-      <td>🟡 JavaScript</td>
-      <td align="center">0</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/gcquirozguzman/java-tcs-202001">☕ java-tcs-202001</a></td>
-      <td>Taller de Java (TCS)</td>
-      <td>🟤 Java</td>
-      <td align="center">11</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/gcquirozguzman/java-spring-boot-201910">🌱 java-spring-boot-201910</a></td>
-      <td>Proyecto base con Spring Boot</td>
-      <td>🟤 Java</td>
-      <td align="center">2</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/gcquirozguzman/api-vision-artificial">👁️ api-vision-artificial</a></td>
-      <td>API de visión artificial</td>
+      <td><a href="https://github.com/gcquirozguzman/amat-net-anuran-audio">🐸 amat-net-anuran-audio</a></td>
+      <td>Reconocimiento multietiqueta de 42 especies de anuros en audio de la Amazonía</td>
       <td>🔵 Python</td>
-      <td align="center">0</td>
+      <td align="center">🧪 Personal</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/gcquirozguzman/willaq-yanapaq">🪶 willaq-yanapaq</a></td>
+      <td>Automatiza tareas docentes en Blackboard: anuncios, sesiones de Collaborate y notas</td>
+      <td>🔵 Python</td>
+      <td align="center"><img src="img/schools/cibertec.svg" height="22" alt="Cibertec" /></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/gcquirozguzman/wasi-kamachi">🍲 wasi-kamachi</a></td>
+      <td>Planificador de compras semanales, quincenales o mensuales a partir de tus recetas</td>
+      <td>🚧 En diseño</td>
+      <td align="center">🧪 Personal</td>
     </tr>
   </tbody>
 </table>
